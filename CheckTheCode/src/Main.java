@@ -1,27 +1,38 @@
 import java.util.Scanner;
-class Dividir0Exception extends RuntimeException {
-    Dividir0Exception (String message){
-        super(message);
-    }
-}
+class Dividir0Exception extends Exception {}
+class ContertirException extends Exception {}
 
 
 class Main {
-    public static void checkTheCode(String input) {
-        int divResult, multResult;
-        int number = Integer.parseInt(input);
-        if (number == 0) {
-            divResult = 0;
-            throw new Dividir0Exception("No se puede divir un número por 0");
-        } else {
-            divResult = 22 / number;
-        }
-        multResult = 0 * number;
-        System.out.println("Estos son los resultados: " + multResult + divResult);
+    public static void checkTheCode(String input) throws Dividir0Exception, ContertirException {
+
+            try {
+                int divResult, multResult;
+
+                int number = Integer.parseInt(input);
+                divResult = 22 / number;
+
+                multResult = 0 * number;
+
+                System.out.println("Estos son los resultados: " + multResult + divResult);
+
+            } catch (ArithmeticException e) {
+                throw new Dividir0Exception();
+            } catch (NumberFormatException e) {
+                throw  new ContertirException();
+            }
     }
 
 
     public static void main(String[] args) {
-        checkTheCode(new Scanner(System.in).next());
+
+        try {
+            checkTheCode(new Scanner(System.in).next());
+        } catch (Dividir0Exception e) {
+            throw new RuntimeException(e);
+        } catch (ContertirException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
