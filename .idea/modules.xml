@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CheckTheCode/CheckTheCode.iml" filepath="$PROJECT_DIR$/CheckTheCode/CheckTheCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Diploma/Diploma.iml" filepath="$PROJECT_DIR$/Diploma/Diploma.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosExcepcions.iml" filepath="$PROJECT_DIR$/EjerciciosExcepcions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NullPointerException/NullPointerException.iml" filepath="$PROJECT_DIR$/NullPointerException/NullPointerException.iml" />
       <module fileurl="file://$PROJECT_DIR$/NumberException/NumberException.iml" filepath="$PROJECT_DIR$/NumberException/NumberException.iml" />
       <module fileurl="file://$PROJECT_DIR$/Unchecked/Unchecked.iml" filepath="$PROJECT_DIR$/Unchecked/Unchecked.iml" />
     </modules>
