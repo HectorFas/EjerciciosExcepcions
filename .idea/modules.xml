@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chain/Chain.iml" filepath="$PROJECT_DIR$/Chain/Chain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckTheCode/CheckTheCode.iml" filepath="$PROJECT_DIR$/CheckTheCode/CheckTheCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Diploma/Diploma.iml" filepath="$PROJECT_DIR$/Diploma/Diploma.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosExcepcions.iml" filepath="$PROJECT_DIR$/EjerciciosExcepcions.iml" />
     </modules>
