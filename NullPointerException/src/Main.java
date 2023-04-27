@@ -2,16 +2,20 @@ import java.util.Scanner;
 
 class Student {
     String name;
-
-    public Student(String name) {
-        this.name = name;
-    }
 }
 
 class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Student estudiante = new Student(scanner.next());
-        System.out.println(estudiante.name.length());
+        Student student = new Student();
+
+        student.name = scanner.nextLine();
+            try {
+                System.out.println(student.name.length());
+
+            } catch (NullPointerException e ) {
+                System.out.println("Students name is null");
+            }
     }
 }
